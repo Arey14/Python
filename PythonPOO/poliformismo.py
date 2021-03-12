@@ -5,7 +5,7 @@ class Persona:
         self.nombre = nombre
 
     def avanza(self):
-        print('Anda caminando')
+        print(self.nombre + ' Anda caminando')
 
 
 class Ciclista(Persona):
@@ -14,7 +14,7 @@ class Ciclista(Persona):
         super().__init__(nombre)
 
     def avanza(self):
-        print('Anda moviendome en mi bicicleta')
+        print(self.nombre + ' Anda moviendome en mi bicicleta')
 
 def main():
     persona = Persona('Augusto')
